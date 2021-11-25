@@ -56,7 +56,7 @@ class GraphemeViewController: UIViewController {
             imageView.image = image
             
             // set an aspect ratio constraint
-            imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: image.size.width / image.size.height).isActive = true
+//            imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: image.size.width / image.size.height).isActive = true
             
             imageView.contentMode = .scaleAspectFit
             
