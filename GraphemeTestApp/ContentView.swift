@@ -27,9 +27,10 @@ struct ContentView: View {
                 ForEach(graphemes, id:\.self) { item in
                     Image(item)
                         .resizable()
-                        .scaledToFit()                        .frame(maxWidth: 100, maxHeight: 100)
+                        .scaledToFit()
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: 100)
             .background(Color.green)
             
             
