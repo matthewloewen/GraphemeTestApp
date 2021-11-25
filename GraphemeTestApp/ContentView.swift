@@ -24,8 +24,8 @@ struct ContentView: View {
             Text("\"a\" and \"bb\" are different sizes when images resize")
             
             HStack {
-                ForEach(graphemes, id:\.self) { item in
-                    Image(item)
+                ForEach(0 ..< graphemes.count, id:\.self) { index in
+                    Image(graphemes[index])
                         .resizable()
                         .scaledToFit()
                 }
