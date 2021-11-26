@@ -28,6 +28,7 @@ struct ContentView: View {
                     Image(graphemes[index])
                         .resizable()
                         .scaledToFit()
+                        .frame(maxHeight: 100)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: 100)
